@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Instagram, Facebook, Twitter, Phone, MapPin } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [email, setEmail] = useState('');
@@ -389,6 +390,7 @@ function App() {
           animation: fadeIn 0.8s ease-out;
         }
       `}</style>
+      <Analytics />
     </div>
   );
 }
